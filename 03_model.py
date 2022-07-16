@@ -58,10 +58,6 @@ features = vectorizer.fit_transform(df['text'].values).toarray()
 # Categoric label convert to numeric value
 df["sentiment_label_encoding"] = LabelEncoder().fit_transform(df["sentiment_label"])
 
-# 0: negative
-# 1: neutral
-# 2: positive
-
 X = features # independent variable
 y = df["sentiment_label"] # dependent variable
 
